@@ -10,6 +10,7 @@ gem 'rpi_gpio'
 
 
 gem 'shotgun', '~>0.9.1'
+gem 'thin'
 
 group :test do
   gem 'shoulda-matchers'
