@@ -11,11 +11,7 @@ require 'rubygems'
 require 'uri'
 require 'pathname'
 
-require 'pg'
-require 'active_record'
 require 'logger'
-require 'bcrypt'
-require 'faker'
 require 'extra_print'
 
 require 'sinatra'
@@ -48,5 +44,4 @@ Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
 # accustoms students to inheriting from ApplicationRecord.
 require APP_ROOT.join('app', 'models', 'application_record').to_s
 
-# Set up the database
-require APP_ROOT.join('config', 'database')
+# Set up the database....NOT
