@@ -1,0 +1,9 @@
+<h1>Registration</h1>
+
+  <%= erb :'_errors' %>
+
+  <form class="registration-form" action="/users" method="post">
+    <input type="text" name="user[username]" placeholder="Username" />
+    <input type="password" name="user[password]" placeholder="Password" />
+    <input class="registration-button" type="submit" value="Register" />
+  </form>

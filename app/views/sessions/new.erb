@@ -1,0 +1,9 @@
+<h1>Welcome to the Login!</h1>
+
+  <%= erb :'_errors' %>
+
+  <form class="login-form" action="/sessions" method="post">
+    <input type="text" name="username" placeholder="Username" />
+    <input type="password" name="password" placeholder="Password" />
+    <input class="login-button" type="submit" value="Login" />
+  </form>
