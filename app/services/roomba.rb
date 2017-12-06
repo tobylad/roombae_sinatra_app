@@ -39,7 +39,7 @@ module Roomba
     RPi::GPIO.set_low 7
     # For testing
     self.on?(7)
-    self.clean_up
+    self.reset
   end
 
   # Moves Bae forward.
@@ -50,7 +50,7 @@ module Roomba
     RPi::GPIO.set_low 12
     # For testing
     self.on?(12)
-    self.clean_up
+    self.reset
   end
 
   # Rotates Bae left.
@@ -62,7 +62,7 @@ module Roomba
     RPi::GPIO.set_low 18
     # For testing
     self.on?(18)
-    self.clean_up
+    self.reset
   end
 
   # Pauses Bae's movements.
@@ -72,11 +72,20 @@ module Roomba
     sleep(1)
     RPi::GPIO.set_low 32
     self.on?(32)
-    self.clean_up
+    self.reset
+  end
+
+  def self.clean
+    self.prep_pin(num)
+    RPi::GPIO.set_high num
+    sleep(5)
+    RPi:GPIO.set_low num
+    self.on?(num)
+    self.reset
   end
 
   # This assures all pins are reset at the end of each command.
-  def self.clean_up
+  def self.reset
     RPi::GPIO.clean_up    
   end
 

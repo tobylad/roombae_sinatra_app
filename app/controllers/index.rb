@@ -22,5 +22,10 @@ get '/pause' do
   erb :'/roombae'
 end
 
+get '/clean' do
+  Roomba.clean
+  erb :'/roombae'
+end
+
 
 
