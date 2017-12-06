@@ -1,17 +1,41 @@
-# Crud Skellie
+# Roombae
 
-*Pulled straight from NUZZLR, here's a nice working CRUD skeleton with all the bells and whistles!*
+*Control your Roomba vaccuum from a web server!*
 
-### Steps
+## The Team  
 
-1. Initialize a repo for a new CRUD app, create a README for it.
-2. Copy everything but THIS markdown file into it.
-3. Already done:
-    -User BCrypt methods
-    -Session and user controllers(for CRUD)
-    -Session helpers
-    -NUKE has been added!
+Andreea Barbaselu  
+Elise Poplawski
+Karlie Romas  
+Toby Ladislas
 
-4. Happy CRUDding!
+## The Hardware
+
+iRobot Roomba Discovery 400  
+Raspberry Pi 3  
+Transistors and breadboards and wires, oh my!  
+
+## The Software  
+
+Ruby  
+Sinatra  
+Raspbian  
+SSH  
+HTML/CSS  
+
+## How we did it  
+
+Through four days of spikes and much trial and error, our team was able to talk to the Roomba with Ruby commands. We then set up a web server on the Raspberry Pi, accessible through our local network.  Through this server is a webpage with a virtual remote control that gives the Roomba commands.
+
+We wired the Roomba's remote to the Raspberry Pi, so we can basically make it go anywhere this local network reaches.
+
+
+
+
+
+
+
+
+
 
 
