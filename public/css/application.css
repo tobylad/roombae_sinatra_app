@@ -1,0 +1,248 @@
+h1 {
+  font-family: 'Audiowide', cursive;
+  font-size: 4em;
+  /*text-align: center;*/
+  margin-left: 25px;
+}
+
+html {
+    background: linear-gradient(90deg, #43cea2 10%, #185a9d 90%);
+}
+
+.remoter {
+  width: 200px;
+  height: 400px;
+  background: #a3a3a3;
+  border: 1px solid #817e75;
+  box-shadow: 0 0 0 3px #cacbc5, 5px 3px 10px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 10px 10px 30px 30px;
+  position: absolute;
+  bottom: 27%;
+  left: 40%;
+}
+.remoter:before, .remoter:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.remoter:before {
+  width: 6px;
+  height: 2px;
+  border-radius: 1px;
+  z-index: -1;
+  position: absolute;
+  left: 30px;
+  top: 0;
+  -webkit-transition: top .2s;
+  transition: top .2s;
+  box-shadow: 0 0 10px 7px rgba(255, 0, 0, 0.7);
+}
+.remoter .btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #2d2f2e;
+  position: absolute;
+}
+.remoter .btn:hover {
+  cursor: pointer;
+  border-color: #CCFF00;
+}
+
+.remoter .power {
+  top: 15px;
+  left: 20px;
+}
+.remoter .power.active {
+  border-color: #5f6361;
+}
+.remoter .power .icon {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(0.6);
+          transform: translate(-50%, -50%) scale(0.6);
+}
+
+.remoter .pause {
+  top: 15px;
+  right: 20px;
+}
+.remoter .pause.active .icon:before, .remoter .pause.active .icon:after {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+.remoter .pause.active .icon:before {
+  border-style: solid;
+  border-width: 5px 10px;
+  border-color: transparent transparent transparent #2d2f2e;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-20%, -50%);
+          transform: translate(-20%, -50%);
+}
+.remoter .pause .icon {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.remoter .pause .icon:before, .remoter .pause .icon:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.remoter .pause .icon:before, .remoter .pause .icon:after {
+  width: 4px;
+  height: 10px;
+  background: #2d2f2e;
+  position: absolute;
+  top: -5px;
+}
+.remoter .pause .icon:before {
+  right: 2px;
+}
+.remoter .pause .icon:after {
+  left: 2px;
+}
+
+.remoter .left {
+  top: 115px;
+  left: 20px;
+}
+.remoter .left .icon {
+  width: 2px;
+  height: 10px;
+  background: #2d2f2e;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 20px;
+}
+.remoter .left .icon:before, .remoter .left .icon:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.remoter .left .icon:before, .remoter .left .icon:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 10px;
+  border-color: transparent #2d2f2e transparent transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.remoter .left .icon:after {
+  left: 10px;
+}
+
+.remoter .right {
+  top: 115px;
+  right: 20px;
+}
+.remoter .right .icon {
+  width: 2px;
+  height: 10px;
+  background: #2d2f2e;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 37px;
+}
+.remoter .right .icon:before, .remoter .right .icon:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.remoter .right .icon:before, .remoter .right .icon:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 10px;
+  border-color: transparent transparent transparent #2d2f2e;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.remoter .right .icon:after {
+  left: -8px;
+}
+
+
+.remoter .clean {
+  top: 220px;
+  left: 20px;
+}
+.remoter .clean.active {
+  border-color: #5f6361;
+}
+.remoter .clean .icon {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(0.6);
+          transform: translate(-50%, -50%) scale(0.6);
+}
+
+.remoter .forward {
+  top: 220px;
+  right: 20px;
+}
+.remoter .forward.active {
+  border-color: #5f6361;
+}
+.remoter .forward .icon {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(0.6);
+          transform: translate(-50%, -50%) scale(0.6);
+}
+
+.remoter .dance {
+  top: 320px;
+  left: 65px;
+}
+.remoter .dance.active {
+  border-color: #5f6361;
+}
+.remoter .dance .icon {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(0.6);
+          transform: translate(-50%, -50%) scale(0.6);
+}
