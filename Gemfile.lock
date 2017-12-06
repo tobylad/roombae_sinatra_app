@@ -24,7 +24,6 @@ GEM
     rack-test (0.7.0)
       rack (>= 1.0, < 3)
     rake (12.3.0)
-    rpi_gpio (0.3.3)
     rspec (3.7.0)
       rspec-core (~> 3.7.0)
       rspec-expectations (~> 3.7.0)
@@ -69,7 +68,6 @@ DEPENDENCIES
   extra_print
   rack-test
   rake
-  rpi_gpio
   rspec
   shotgun (~> 0.9.1)
   shoulda-matchers
