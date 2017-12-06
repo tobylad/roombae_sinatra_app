@@ -3,6 +3,7 @@ $(document).ready(function() {
   $('.js--forward').on('click', moveForwardHandler)
   $('.js--left').on('click', turnLeftHandler)
   $('.js--pause').on('click', pauseHandler)
+  $('.js--clean').on('click', cleanHandler)
 });
 
 // For .dones, make jQuery event to display flash message?
@@ -52,6 +53,18 @@ const pauseHandler = function(){
 
   promise.done(function(response) {
     console.log("Roomba paused!")
+  })
+};
+
+const cleanHandler = function(){
+  const $button = $(this)
+
+  const promise = $.ajax({
+    url: $button.attr('action')
+  });
+
+  promise.done(function(response) {
+    console.log("Roomba is cleaning!")
   })
 };
 
