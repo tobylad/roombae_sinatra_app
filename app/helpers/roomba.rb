@@ -1,4 +1,5 @@
 require 'rpi_gpio'
+# REMEMBER TO INCLUDE THIS IN GEMFILE AND REBUNDLE
 
 module Roomba
 
