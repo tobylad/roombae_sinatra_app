@@ -49,44 +49,6 @@ html {
   border-color: #CCFF00;
 }
 
-
-.remoter .right {
-  /*top: 15px;
-  right: 20px;*/
-  top: 120px;
-  right: 20px;
-}
-.remoter .right .icon {
-  width: 2px;
-  height: 10px;
-  background: #2d2f2e;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  left: 37px;
-}
-.remoter .right .icon:before, .remoter .right .icon:after {
-  content: "";
-  display: block;
-  position: absolute;
-}
-.remoter .right .icon:before, .remoter .right .icon:after {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 5px 10px;
-  border-color: transparent transparent transparent #2d2f2e;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.remoter .right .icon:after {
-  left: -8px;
-}
 .remoter .power {
   top: 15px;
   left: 20px;
@@ -105,9 +67,8 @@ html {
   -webkit-transform: translate(-50%, -50%) scale(0.6);
           transform: translate(-50%, -50%) scale(0.6);
 }
+
 .remoter .pause {
-  /*top: 70px;
-  right: 20px;*/
   top: 15px;
   right: 20px;
 }
@@ -155,48 +116,9 @@ html {
 .remoter .pause .icon:after {
   left: 2px;
 }
-.remoter .forward {
-  top: 220px;
-  right: 20px;
-  background: #2d2f2e;
-}
-.remoter .forward .icon {
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.remoter .forward .icon:before, .remoter .forward .icon:after {
-  content: "";
-  display: block;
-  position: absolute;
-}
-.remoter .forward .icon:before {
-  width: 2px;
-  height: 16px;
-  background: #a3a3a3;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.remoter .forward .icon:after {
-  width: 16px;
-  height: 2px;
-  background: #a3a3a3;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
 
 .remoter .left {
-  top: 120px;
+  top: 115px;
   left: 20px;
 }
 .remoter .left .icon {
@@ -231,12 +153,96 @@ html {
   left: 10px;
 }
 
-.remoter #forward {
-  font-size: 18px;
+.remoter .right {
+  top: 115px;
+  right: 20px;
+}
+.remoter .right .icon {
+  width: 2px;
+  height: 10px;
+  background: #2d2f2e;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 37px;
+}
+.remoter .right .icon:before, .remoter .right .icon:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.remoter .right .icon:before, .remoter .right .icon:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 10px;
+  border-color: transparent transparent transparent #2d2f2e;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.remoter .right .icon:after {
+  left: -8px;
+}
+
+
+.remoter .clean {
+  top: 220px;
+  left: 20px;
+}
+.remoter .clean.active {
+  border-color: #5f6361;
+}
+.remoter .clean .icon {
+  font-size: 20px;
   font-weight: bold;
   position: absolute;
-  top: 290px;
-  right: 22px;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(0.6);
+          transform: translate(-50%, -50%) scale(0.6);
+}
+
+.remoter .forward {
+  top: 220px;
+  right: 20px;
+}
+.remoter .forward.active {
+  border-color: #5f6361;
+}
+.remoter .forward .icon {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(0.6);
+          transform: translate(-50%, -50%) scale(0.6);
+}
+
+.remoter .dance {
+  top: 320px;
+  left: 65px;
+}
+.remoter .dance.active {
+  border-color: #5f6361;
+}
+.remoter .dance .icon {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(0.6);
+          transform: translate(-50%, -50%) scale(0.6);
 }
