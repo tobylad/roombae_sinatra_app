@@ -16,7 +16,7 @@ html {
   border: 1px solid #817e75;
   box-shadow: 0 0 0 3px #cacbc5, 5px 3px 10px 6px rgba(0, 0, 0, 0.4);
   border-radius: 10px 10px 30px 30px;
-  position: absolute;
+  position: relative;
   bottom: 27%;
   left: 40%;
 }
