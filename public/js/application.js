@@ -8,7 +8,8 @@ $(document).ready(function() {
 
 // For .dones, make jQuery event to display flash message?
 
-const powerOnHandler = function(){
+const powerOnHandler = function(event){
+  event.preventDefault()
   const $button = $(this)
 
   const promise = $.ajax({
@@ -20,7 +21,8 @@ const powerOnHandler = function(){
   })
 };
 
-const moveForwardHandler = function(){
+const moveForwardHandler = function(event){
+  event.preventDefault()
   const $button = $(this)
 
   const promise = $.ajax({
@@ -32,7 +34,8 @@ const moveForwardHandler = function(){
   })
 };
 
-const turnLeftHandler = function(){
+const turnLeftHandler = function(event){
+  event.preventDefault()
   const $button = $(this)
 
   const promise = $.ajax({
@@ -44,7 +47,8 @@ const turnLeftHandler = function(){
   })
 };
 
-const pauseHandler = function(){
+const pauseHandler = function(event){
+  event.preventDefault()
   const $button = $(this)
 
   const promise = $.ajax({
@@ -56,7 +60,8 @@ const pauseHandler = function(){
   })
 };
 
-const cleanHandler = function(){
+const cleanHandler = function(event){
+  event.preventDefault()
   const $button = $(this)
 
   const promise = $.ajax({
@@ -67,13 +72,3 @@ const cleanHandler = function(){
     console.log("Roomba is cleaning!")
   })
 };
-
-
-
-
-
-
-
-
-
-
