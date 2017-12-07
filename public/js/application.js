@@ -8,11 +8,12 @@ $(document).ready(function() {
 
 // For .dones, make jQuery event to display flash message?
 
-const powerOnHandler = function(){
+const powerOnHandler = function(event){
+  event.preventDefault()
   const $button = $(this)
 
   const promise = $.ajax({
-    url: $button.attr('action')
+    url: '/power'
   });
 
   promise.done(function(response) {
@@ -20,11 +21,12 @@ const powerOnHandler = function(){
   })
 };
 
-const moveForwardHandler = function(){
+const moveForwardHandler = function(event){
+  event.preventDefault()
   const $button = $(this)
 
   const promise = $.ajax({
-    url: $button.attr('action')
+    url: '/forward'
   });
 
   promise.done(function(response) {
@@ -32,11 +34,12 @@ const moveForwardHandler = function(){
   })
 };
 
-const turnLeftHandler = function(){
+const turnLeftHandler = function(event){
+  event.preventDefault()
   const $button = $(this)
 
   const promise = $.ajax({
-    url: $button.attr('action')
+    url: '/left'
   });
 
   promise.done(function(response) {
@@ -44,11 +47,12 @@ const turnLeftHandler = function(){
   })
 };
 
-const pauseHandler = function(){
+const pauseHandler = function(event){
+  event.preventDefault()
   const $button = $(this)
 
   const promise = $.ajax({
-    url: $button.attr('action')
+    url: '/pause'
   });
 
   promise.done(function(response) {
@@ -56,24 +60,15 @@ const pauseHandler = function(){
   })
 };
 
-const cleanHandler = function(){
+const cleanHandler = function(event){
+  event.preventDefault()
   const $button = $(this)
 
   const promise = $.ajax({
-    url: $button.attr('action')
+    url: '/clean'
   });
 
   promise.done(function(response) {
     console.log("Roomba is cleaning!")
   })
 };
-
-
-
-
-
-
-
-
-
-

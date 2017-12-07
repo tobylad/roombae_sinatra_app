@@ -1,3 +1,5 @@
+require_relative '../services/roomba'
+
 get '/' do
   erb :'/roombae'
 end
