@@ -13,7 +13,7 @@ const powerOnHandler = function(event){
   const $button = $(this)
 
   const promise = $.ajax({
-    url: $button.attr('action')
+    url: '/power'
   });
 
   promise.done(function(response) {
@@ -26,7 +26,7 @@ const moveForwardHandler = function(event){
   const $button = $(this)
 
   const promise = $.ajax({
-    url: $button.attr('action')
+    url: '/forward'
   });
 
   promise.done(function(response) {
@@ -39,7 +39,7 @@ const turnLeftHandler = function(event){
   const $button = $(this)
 
   const promise = $.ajax({
-    url: $button.attr('action')
+    url: '/left'
   });
 
   promise.done(function(response) {
@@ -52,7 +52,7 @@ const pauseHandler = function(event){
   const $button = $(this)
 
   const promise = $.ajax({
-    url: $button.attr('action')
+    url: '/pause'
   });
 
   promise.done(function(response) {
@@ -65,7 +65,7 @@ const cleanHandler = function(event){
   const $button = $(this)
 
   const promise = $.ajax({
-    url: $button.attr('action')
+    url: '/clean'
   });
 
   promise.done(function(response) {
