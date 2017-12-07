@@ -69,9 +69,9 @@ module Roomba
   def self.pause
     self.prep_pin(32)
     RPi::GPIO.set_high 32
-    sleep(1)
+    sleep(3)
     RPi::GPIO.set_low 32
-    self.on?(32)
+    puts self.on?(32)
     self.reset
   end
 
