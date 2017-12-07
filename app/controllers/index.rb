@@ -15,9 +15,13 @@ get '/forward' do
 end
 
 get '/left' do 
-  Roomba.left(5)
+  Roomba.left
   erb :'/roombae'
 end
+
+get '/right' do
+  Roomba.right
+  erb :'/roombae'
 
 get '/pause' do
   Roomba.pause

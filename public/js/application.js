@@ -2,6 +2,7 @@ $(document).ready(function() {
   $('.js--power').on('click', powerOnHandler)
   $('.js--forward').on('click', moveForwardHandler)
   $('.js--left').on('click', turnLeftHandler)
+  $('.js--right').on('click', turnRightHandler)
   $('.js--pause').on('click', pauseHandler)
   $('.js--clean').on('click', cleanHandler)
 });
@@ -44,6 +45,19 @@ const turnLeftHandler = function(event){
 
   promise.done(function(response) {
     console.log("Rotating left!")
+  })
+};
+
+const turnRightHandler = function(event){
+  event.preventDefault()
+  const $button = $(this)
+
+  const promise = $.ajax({
+    url: '/right'
+  });
+
+  promise.done(function(response) {
+    console.log("Rotating right!")
   })
 };
 
