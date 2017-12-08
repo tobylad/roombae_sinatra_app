@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('.js--forward').on('click', moveForwardHandler)
   $('.js--left').on('click', turnLeftHandler)
   $('.js--right').on('click', turnRightHandler)
-  $('.js--pause').on('click', pauseHandler)
+  $('.js--dance').on('click', danceHandler)
   $('.js--clean').on('click', cleanHandler)
 });
 
@@ -61,16 +61,16 @@ const turnRightHandler = function(event){
   })
 };
 
-const pauseHandler = function(event){
+const danceHandler = function(event){
   event.preventDefault()
   const $button = $(this)
 
   const promise = $.ajax({
-    url: '/pause'
+    url: '/dance'
   });
 
   promise.done(function(response) {
-    console.log("Roomba paused!")
+    console.log("Roomba dance!")
   })
 };
 

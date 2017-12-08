@@ -23,8 +23,8 @@ get '/right' do
   Roomba.right
   erb :'/roombae'
 
-get '/pause' do
-  Roomba.pause
+get '/dance' do
+  Roomba.dance
   erb :'/roombae'
 end
 
