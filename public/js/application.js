@@ -2,7 +2,8 @@ $(document).ready(function() {
   $('.js--power').on('click', powerOnHandler)
   $('.js--forward').on('click', moveForwardHandler)
   $('.js--left').on('click', turnLeftHandler)
-  $('.js--pause').on('click', pauseHandler)
+  $('.js--right').on('click', turnRightHandler)
+  $('.js--dance').on('click', danceHandler)
   $('.js--clean').on('click', cleanHandler)
 });
 
@@ -47,16 +48,29 @@ const turnLeftHandler = function(event){
   })
 };
 
-const pauseHandler = function(event){
+const turnRightHandler = function(event){
   event.preventDefault()
   const $button = $(this)
 
   const promise = $.ajax({
-    url: '/pause'
+    url: '/right'
   });
 
   promise.done(function(response) {
-    console.log("Roomba paused!")
+    console.log("Rotating right!")
+  })
+};
+
+const danceHandler = function(event){
+  event.preventDefault()
+  const $button = $(this)
+
+  const promise = $.ajax({
+    url: '/dance'
+  });
+
+  promise.done(function(response) {
+    console.log("Roomba dance!")
   })
 };
 

@@ -15,12 +15,16 @@ get '/forward' do
 end
 
 get '/left' do 
-  Roomba.left(5)
+  Roomba.left
   erb :'/roombae'
 end
 
-get '/pause' do
-  Roomba.pause
+get '/right' do
+  Roomba.right
+  erb :'/roombae'
+
+get '/dance' do
+  Roomba.dance
   erb :'/roombae'
 end
 
